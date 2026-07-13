@@ -25,49 +25,46 @@ img {
     margin-bottom: 2rem;
 }
 
-/* バナー（レスポンシブ対応） */
+/* バナー */
 .banner img {
     width: 100%;
     height: 30vw;
-    /* 画面幅に応じて高さが変わる */
     object-fit: cover;
-    /* トリミングしつつ全体を表示 */
     object-position: top;
-    /* 上部の文字を優先して表示 */
-}
-
-.title-block h1 {
-    display: none;
 }
 
 /* ========================= */
 /* テキストブロック          */
 /* ========================= */
 
-.intro,
-.section,
-ul,
-h2 {
+/* intro は少し浅め */
+.intro {
     max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 2rem;
-    /* ← h2 と ul の左右余白を揃える */
+    margin: 0 auto 2rem auto;
+    padding-left: 1rem;
     padding-right: 1rem;
 }
 
-/* intro */
-.intro {
-    margin-bottom: 2rem;
-    font-size: 1rem;
-}
-
-/* 見出し */
+/* h2（章タイトル） */
 h2 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    max-width: 720px;
+    margin: 3rem auto 1rem auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-size: 1.3rem;
     font-weight: 600;
+    border-top: 1px solid #ccc;
+    /* ← 章区切り線 */
+    padding-top: 1.5rem;
+    /* ← 線とタイトルの間隔 */
+}
+
+/* section（本文） */
+.section {
+    max-width: 720px;
+    margin: 0 auto 2rem auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 /* ========================= */
@@ -75,20 +72,17 @@ h2 {
 /* ========================= */
 
 ul {
-    margin-bottom: 2rem;
-    padding-left: 2.5rem;
-    /* ← h2 より少し深くして階層を明確化 */
+    max-width: 720px;
+    margin: 0 auto 2rem auto;
+    padding-left: 2rem;
+    /* ← h2 より深く */
+    padding-right: 1rem;
 }
 
 ul li {
     margin-bottom: 1rem;
-    padding-left: 0.25rem;
+    padding-left: 0.5rem;
     /* ← 箇条書きの「・」が自然に揃う */
-}
-
-/* セクション */
-.section {
-    margin-bottom: 2rem;
 }
 
 /* ========================= */

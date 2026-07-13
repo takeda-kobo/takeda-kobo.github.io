@@ -71,14 +71,22 @@ h2 {
 
 /* リスト */
 ul {
-    margin-bottom: 2rem;
+    /*     margin-bottom: 2rem;
     padding-left: 1.5rem;
+ */
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    /* ← 1.5rem → 2rem に調整 */
 }
 
 ul li {
-    margin-bottom: 1rem;
+    /*     margin-bottom: 1rem;
     padding-left: 0.5rem;
+ */
     /* インデント追加（①） */
+    margin-bottom: 1rem;
+    padding-left: 0.25rem;
+    /* ← 0.5rem → 0.25rem に調整 */
 }
 
 /* セクション（①インデント） */

@@ -1,100 +1,30 @@
 /* ========================= */
-/* 基本設定（全ページ共通） */
+/* インデント最小構成（基礎レイヤー） */
 /* ========================= */
 
-body {
-    font-family: sans-serif;
-    line-height: 1.7;
-    margin: 0;
-    padding: 0;
-    color: #222;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* ========================= */
-/* レイアウト構造           */
-/* ========================= */
-
-.site-header {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.banner img {
-    width: 100%;
-    height: 30vw;
-    object-fit: cover;
-    object-position: top;
-}
-
-.title-block h1 {
-    display: none;
-}
-
-/* ========================= */
-/* テキストブロック          */
-/* ========================= */
-
-/* intro（浅め） */
-.intro {
-    max-width: 720px;
-    margin: 0 auto 2rem auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-/* h2（章タイトル） */
-h2 {
-    max-width: 720px;
-    margin: 3rem auto 1rem auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-size: 1.3rem;
-    font-weight: 600;
-    border-top: 1px solid #ccc;
-    padding-top: 1.5rem;
-}
-
-/* section（本文） */
-.section {
-    max-width: 720px;
-    margin: 0 auto 2rem auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-/* ========================= */
-/* リスト（インデント調整） */
-/* ========================= */
-
+/* 親要素の余白を完全にゼロにする */
+.intro,
+.section,
+h2,
 ul {
     max-width: 720px;
-    margin: 0 auto 2rem auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* インデントを成立させるための最小指定 */
+ul {
     padding-left: 2.5rem;
-    /* ← ここが効くようになる */
-    padding-right: 1rem;
+    /* ← インデントの基礎 */
 }
 
 ul li {
-    margin-bottom: 1rem;
     padding-left: 0.5rem;
-    /* 箇条書きの「・」が自然に揃う */
-}
-
-/* ========================= */
-/* リンク                    */
-/* ========================= */
-
-a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+    /* ← 箇条書きの「・」の位置調整 */
+    margin-bottom: 1rem;
+    /* ← 最小限の行間（副作用なし） */
 }

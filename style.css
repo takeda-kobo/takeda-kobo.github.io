@@ -20,21 +20,21 @@ p {
 /* 第2レイヤー：インデント構造 */
 /* ========================= */
 
-/* h2 の内容ブロックを 1.5rem 下げる */
+/* section のインデント（既存） */
 .section {
     padding-left: 1.5rem;
 }
 
-/* h3（業務項目） */
-h3 {
+/* h3 は section と同じ段 */
+.section h3 {
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-    font-weight: 600;
 }
 
-/* p（説明文） */
+/* p を h3 より一段下げる（ここが追加） */
 .section p {
+    padding-left: 1rem;
+    /* ← h3 より右へ。値は 0.8〜1.2rem が自然 */
     margin-bottom: 1rem;
     line-height: 1.7;
 }

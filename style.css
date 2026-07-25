@@ -12,6 +12,9 @@ body {
 
 /* 全体の左右余白（第2レイヤー） */
 .wrapper {
+    /* padding: 0 20px; */
+    max-width: 720px;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
